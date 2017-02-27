@@ -3,8 +3,12 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 
-h1, h2, h3 {
+h2, h3, h5 {
     font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar, .home-callout {
@@ -22,9 +26,24 @@ background: linear-gradient(to right, #2C3E50 , #4CA1AF); /* W3C, IE 10+/ Edge, 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a{
     color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
     &:hover {
         color: white;
         opacity: 0.75;
+    }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #2C3E50;
+    border: 2px solid white;
+    &:hover, &:focus {
+        background-color: #4CA1AF;
+        opacity: 0.25;
     }
 }
 
